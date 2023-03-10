@@ -1,0 +1,10 @@
+import string
+n,d=input(),0
+for c in string.punctuation:
+    n=n.replace(c," ")
+s=[i for i in n.split()]
+for i in range(len(s)):
+    if s[i]=='the' or s[i]=='a' or s[i]=='an':
+          d+=1
+
+print(d)   
